@@ -61,13 +61,14 @@ int ft_max(int *arr)
    return(max);
 }
 
-void ft_revpush(t_stack *stack, int items)
+void ft_revpush(t_stack *stack)
 {
-    printf("---revpush---\n");
     int i;
+    int size;
     
     i = 0;
-    while (i <= items)
+    size = stack ->size_b;
+    while (i <= size + 1)
     {
         rrb(stack);
         pa(stack);
@@ -277,7 +278,7 @@ void ft_quicksort(t_stack *stack,int size,int *arr)
     if(stack->size_b >= 3)
         stack->b=  ft_pushswap(stack->size_b + 1,stack->b, ctl);       
     if (stack->size_b >= 3)
-        ft_revpush(stack, items);
+        ft_revpush(stack);
         
     printf("son %d\n\n",stack->a[10]);
     printf("son %d\n\n",stack->a[9]);
