@@ -291,8 +291,4 @@ void ft_quicksort(t_stack *stack,int size,int *arr)
     printf("son %d\n\n",stack->a[2]);
     printf("son %d\n\n",stack->a[1]);
     printf("son %d\n\n",stack->a[0]);
-    
-    free(stack->a);
-    free(stack->b);
-    free(stack);
 }
