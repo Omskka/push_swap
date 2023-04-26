@@ -69,7 +69,7 @@ void ft_revpush(t_stack *stack)
     
     i = 0;
     size = stack -> size_b;
-    while (i <= size + 1)
+    while (i <= size)
     {
         rrb(stack);
         pa(stack);
@@ -100,10 +100,7 @@ void three_a(t_stack *stack)
    if(max == stack-> a[1])
    {
         if(stack->a[0] < stack->a[2])
-        {
             rra(stack);
-            sa(stack);
-        }
 
         else
         {
