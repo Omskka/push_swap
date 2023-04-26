@@ -100,7 +100,7 @@ void three_a(t_stack *stack)
    if(max == stack-> a[1])
    {
         if(stack->a[0] < stack->a[2])
-            rra(stack);
+            ra(stack);
 
         else
         {
