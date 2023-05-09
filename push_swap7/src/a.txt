@@ -1,0 +1,31 @@
+    int max;
+
+    max = ft_max(stack->b);
+   if(max == stack->b[0])
+   {
+        if(stack->b[1] < stack->b[2])
+            rrb(stack);
+        else
+        {
+            sb(stack);
+            rrb(stack);
+        }            
+   }
+   else if(max == stack->b[1])
+   {
+        if(stack->b[0] < stack->b[2])
+            sb(stack);
+        else
+            rb(stack);
+   }
+   else if(max == stack->b[2])
+   {
+        if(stack->b[0] > stack->b[1])
+        {
+            sb(stack);
+            rb(stack);
+        }
+   }
+   pa(stack);
+   pa(stack);
+   pa(stack);
