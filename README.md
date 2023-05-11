@@ -1,5 +1,7 @@
 # push_swap
 
+![Screenshot](ss/ss.png)
+
 ## Push_Swap Rules and Grading
 
 The program is only allowed two stacks to work with, stack A and stack B. All the numbers are initially added to stack A, and B is empty.
