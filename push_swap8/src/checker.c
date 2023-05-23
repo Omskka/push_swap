@@ -96,8 +96,6 @@ void	ft_checker(const char *argv)
 	long long	num;
 
 	num = ft_atoi(argv);
-	if (num == 0)
-		ft_error();
 	if (num < -2147483648 || num > 2147483647)
 		ft_error();
 }
